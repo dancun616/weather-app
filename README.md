@@ -20,7 +20,15 @@ Change directory into the repo folder:
 
     cd weather-app
 
-Open it in Visual Studio Code:
+Open it in (Visual Studio Code:)
 
     code .
-    
+
+### Running tha application
+To run the application in alternative two 
+
+ *Open a new terminal and copy the command below:
+
+     google-chrome index.html 
+
+This enables us to run HTML file in browser.
