@@ -36,10 +36,10 @@ This enables us to run HTML file in browser.
 Once the project is up and running in the browser,You should be directed to a dummy Login page which requires you to input any characters and then directed to the WeatherApp page where you can search for location and the app will render the weather details based on the location.
 
 
-# Author
+## Author
 Contributed by:
 - [Dancun Odhiambo](https://www.github.com/dancun616)
 
-#License
+## License
 
 [ISC]
