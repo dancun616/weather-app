@@ -82,6 +82,7 @@ button{
     padding: 10px;
     margin-left: 20px;
 }
+/*styling for all input elements*/
 input{
     height: 2em;
     margin-left: 20px;
@@ -89,6 +90,13 @@ input{
     border-radius: 5px;
     padding:0 5px;
     
+}
+/*h2 temp styling */
+h2#temp{
+ color: rgb(240, 243, 231);
+ font-size: 40px;
+ margin-top: 6%;
+ 
 }
 span{
     color:whitesmoke;
