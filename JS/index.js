@@ -40,7 +40,7 @@ signUpForm.addEventListener("click", function onsubmit(e) {
     mainDetails.style.display= "block";
 })
 
-
+//This code explains what happens when a sign-up button is clicked
 signUpButton.addEventListener("click", function onclick(e) {
     e.preventDefault()
 
@@ -49,6 +49,7 @@ signUpButton.addEventListener("click", function onclick(e) {
     signupDiv.style.display= "none";
 })
 
+//This function submits our location form and outputs our fetched results
 locationForm.addEventListener("submit", function onsubmit(event) {
     event.preventDefault()
  
