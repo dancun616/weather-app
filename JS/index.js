@@ -82,7 +82,7 @@ locationForm.addEventListener("submit", function onsubmit(event) {
             return textrecomm.textContent=`Description: Wear heavy clothing and remember to carry an umbrella`
         } 
         else if (descr !== "Cloudy" || descr !== "Partly cloudy") {
-            return textrecomm.textContent=`Description: Wear light clothing and remember to hydrate`
+            return textrecomm.textContent=`Description: Wear light clothing `
         }
         }
     })
