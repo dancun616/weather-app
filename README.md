@@ -27,7 +27,7 @@ Open it in *Visual Studio Code:*
 ### Running tha application
 To run the application in alternative two 
 
- * Open a new terminal and copy the command below:
+ - Open a new terminal and copy the command below:
 
      google-chrome index.html 
 
