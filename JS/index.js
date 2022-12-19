@@ -1,3 +1,4 @@
+//Assigning variables to html elements
 const loginDetails =document.getElementById("login-details")
 const signupDetails =document.getElementById("sign-up-details")
 const loginForm= document.getElementById("login-form")
@@ -91,12 +92,12 @@ locationForm.addEventListener("submit", function onsubmit(event) {
  
 
 // about tag event listener
-abouttag.addEventListener("click", () => {
-    abtEl.style.display= "block"
-    mainDetails.style.display= "none";
-    fdbckEl.style.display= "none";
-    hideEl();
-})
+// abouttag.addEventListener("click", () => {
+//     abtEl.style.display= "block"
+//     mainDetails.style.display= "none";
+//     fdbckEl.style.display= "none";
+//     hideEl();
+// })
 
 //
 document.addEventListener("DOMContentLoaded", () => {
