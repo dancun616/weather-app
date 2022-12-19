@@ -17,12 +17,14 @@ const abouttag = document.getElementById("abttag")
 const fdbckEl= document.getElementById("Feedbackinfo")
 const abtEl= document.getElementById("Aboutinfo")
 
+//hides login page until required 
 function hideEl() {
     loginDetails.style.display= "none";
     signupDetails.style.display= "none";
     signupDiv.style.display= "none";
 }
 
+//submits login page 
 loginForm.addEventListener("submit", function onsubmit(e) {
     e.preventDefault()
 
@@ -30,6 +32,7 @@ loginForm.addEventListener("submit", function onsubmit(e) {
     mainDetails.style.display= "block";
 })
 
+//submits sign-up form
 signUpForm.addEventListener("click", function onsubmit(e) {
     e.preventDefault()
 
@@ -60,7 +63,7 @@ locationForm.addEventListener("submit", function onsubmit(event) {
 
     function renderweatherDetails(data) {
         dataTemp.innerText= `Temperature: ${data.temperature}`
-        dataWind,innerText=`Wind: ${data.wind}`
+        dataWind,innerText=`Wind: ${data.wind_kph}Kph`
         datadescription.innerText=`Description: ${data.description}`
     }
 
