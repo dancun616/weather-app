@@ -102,12 +102,32 @@ h2#temp{
 span{
     color:whitesmoke;
 }
+/*recomendation button styling*/
+label#recomm{
+    text-align: center;
+}
+/*button recomendation styling*/
+button#recommend-btn{
+    margin-top: 20px;
+    background-color: rgb(46, 232, 229);
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+/*login text styling */
 .login-text{
   text-align: center; 
   margin-bottom: 15%; 
   color: black;
   font-size:32px ;
   font-weight: bolder;
+}
+/*div card styling*/
+div#weather-html{
+background: #00050e;
+margin-left: 20%;
+margin-right: 20%;
+padding: px;
 }
 
 #weather-html {
