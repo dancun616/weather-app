@@ -127,9 +127,11 @@ div#weather-html{
 background: #00050e;
 margin-left: 20%;
 margin-right: 20%;
-padding: px;
 }
-
+input#search{
+    margin-top:15px;
+    height: 3em;
+}
 #weather-html {
 
     display: none;

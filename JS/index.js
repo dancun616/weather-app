@@ -49,7 +49,7 @@ signUpButton.addEventListener("click", function onclick(e) {
     signupDiv.style.display= "none";
 })
 
-//This function submits our location form and outputs our fetched results
+//This function submits our location form and outputs fetched results
 locationForm.addEventListener("submit", function onsubmit(event) {
     event.preventDefault()
  
@@ -67,7 +67,7 @@ locationForm.addEventListener("submit", function onsubmit(event) {
         dataWind,innerText=`Wind: ${data.wind_kph}Kph`
         datadescription.innerText=`Description: ${data.description}`
     }
-
+        //recommendation button event listener
     recommendationbtn.addEventListener("click", function onclick(e) {
         e.preventDefault()
 
@@ -88,11 +88,7 @@ locationForm.addEventListener("submit", function onsubmit(event) {
     })
 })
 
-
-function liked(){
-    var element = document.getElementById("like");
-    element.classList.toggle("liked");
-  }
+ 
 
 // about tag event listener
 abouttag.addEventListener("click", () => {
@@ -102,7 +98,7 @@ abouttag.addEventListener("click", () => {
     hideEl();
 })
 
-
+//
 document.addEventListener("DOMContentLoaded", () => {
     console.log("The DOM has loaded")
     locationForm.onsubmit
