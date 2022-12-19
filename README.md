@@ -20,15 +20,26 @@ Change directory into the repo folder:
 
     cd weather-app
 
-Open it in (Visual Studio Code:)
+Open it in *Visual Studio Code:*
 
     code .
 
 ### Running tha application
 To run the application in alternative two 
 
- *Open a new terminal and copy the command below:
+ * Open a new terminal and copy the command below:
 
      google-chrome index.html 
 
 This enables us to run HTML file in browser.
+## Project set-up
+Once the project is up and running in the browser,You should be directed to a dummy Login page which requires you to input any characters and then directed to the WeatherApp page where you can search for location and the app will render the weather details based on the location.
+
+
+# Author
+Contributed by:
+- [Dancun Odhiambo](https://www.github.com/dancun616)
+
+#License
+
+[ISC]
