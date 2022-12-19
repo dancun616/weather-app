@@ -1,4 +1,4 @@
-# WeatherApp project
+# WeatherApp-project
 ## Description
 WeatherApp project is an app that allows users to get current data of the weather based on location search.The App also recommends what to wear based on current weather condition.
 
