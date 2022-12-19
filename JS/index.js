@@ -94,13 +94,7 @@ function liked(){
     element.classList.toggle("liked");
   }
 
-// fdbcktag.addEventListener("click", (e) => {
-//     fdbckEl.style.display= "block";
-//     mainDetails.style.display= "none";
-//     abtEl.style.display= "none";
-//     hideEl();
-// })
-
+// about tag event listener
 abouttag.addEventListener("click", () => {
     abtEl.style.display= "block"
     mainDetails.style.display= "none";
