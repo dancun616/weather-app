@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body style="background-image: url('pexels-isaac-quesada-4381454.jpg'); height:100vh;">
+
+    <div id="login-details" class="center">
+        <h1>Weather<span>App</span></h1>
+        <form id="login-form">
+            <p class="login-text">Login</p>
+            <p class="tags">Username or email</p>
+            <label class="tags" for="fUsername">Username:</label><br>
+            <input class="tags" type="text" id="login-name" placeholder="Input your username" required><br>
+            <label class="tags" for="password">Password:</label><br>
+            <input class="tags" id="login-password" placeholder="password" required><br>
+            <input type="submit">
+        </form>
+        <div id="btn-signup">
+            <div id="btn-sign-up">
+               
+                <button id="sign-up btn" class="signup">Sign up</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sign-up-details" class="center">
+        <form id="sign-up form">
+            <h1>Signup</h1>
+            <label for="f2name" class="tags">Name:</label><br>
+            <input type="Name" placeholder="Input your name" class="tags"><br>
+            <label for="f2Username" class="tags">Username:</label><br>
+            <input type="username" placeholder="Please create your username" class="tags"><br>
+            <label for="f2signup-password"class="tags" >Password:</label><br>
+            <input type="newPassword" placeholder="Please create your custom password"class="tags"><br>
+            <input type="submit" >
+        </form>
+    </div>
+    <div id="weather-html">
+        <div id="location-input">
+            <form id="location-form">
+                <input id="search" type="text" name="search" placeholder="Input location">
+                <input type="Submit" name="submit">
+            </form>
+        </div>
+        <div id="main-div">
+            <div id="weather-container" class="card">
+                <!--contains our fetched weather data-->
+                <h2 id="temp">Temperature: </h2>
+                <h2 id="wind">Wind: </h2>
+                <h3 id="description">Weather Description: </h3>
+            </div>
+            <div id="recommend">
+                <button id="recommend-btn">Recommendation</button>
+            </div id="text recommendation">
+                <label id="recomm" for="recommendtext">Your Recommendation:</label>
+                <p id="recomm">Recommendation: </p>
+            </div>
+        </div>
+    </div>
+            <div id="Aboutinfo">
+                <h1>What this App is about.</h1>
+                <p>This app enables its users to get real-time information about the weather. 
+                It gives the users information about the weather according to the location they
+                input and gives them recommendations on what to wear and carry for the day.
+                </p>
+            </div>
+            <div id="Feedbackinfo">
+                <button id="like" onclick="liked()">
+                    <i class="fa fa-thumbs-up"></i>
+                    <span class="icon">Like</span>
+                </button>
+                <label for="feedbacksubmission">Give your feedback</label>
+                <textarea id="feedback-review" name="feedback" rows="4" cols="50"></textarea>
+                <button id="submitbtn">Submit your feedback</button>
+            </div>
+    <script src="JS/index.js"></script>
+</body>
+</html>
