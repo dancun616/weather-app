@@ -1,19 +1,29 @@
-*{
-    margin: 0;
-    padding: 0;
+/*Styling our body*/
+body {
+    text-align: center;
+    background-size: cover;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
-   
 }
-
-
-/* Add a black background color to the top navigation */
+/* adding color to span on weather app */
+span{
+    color: white;
+}
+.login{
+    font-size: 29px;
+    font-weight: 500px;
+}
+/* Adding styles to the top navigation menu */
 .topnav {
     background-color: rgb(15, 11, 11);
     overflow: hidden;
+    margin-top: 0px;
+    margin-left: 0px;
+    
 }
   
-/* Style the links inside the navigation bar */
+/* Style the links inside the navigation menu */
 .topnav a {
     float: left;
     color: #f2f2f2;
@@ -31,132 +41,64 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #04AA6D;
+    background-color: rgba(255, 217, 0, 0.603);
     color: white;
 }
 
-/*centers login and sigup div*/
-.center{
-    margin: auto;
+/*Styling the login page*/
+#login-details {
     display: block;
-    width: 450px;
-    height: 500px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.25);
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.2px);
-    -webkit-backdrop-filter: blur(8.2px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 450px;
+    margin: auto;
+    margin-top:10%;
 }
-/*spaces from top*/
-#login-details{
-    margin-top: 10%;
-    
+/*Styling the submission button in our login form*/
+#logformsubmit {
+    font-size: 20px;
 }
-/*styling for sign-up details forms*/
+
+/*Styling the text prompting us to sign up*/
+#signdtls {
+    font-size: 25px;
+}
+
+/*Styling our sign-up page*/
 #sign-up-details {
-    margin-top: 10%;
     position: static;
     display: none;
-}
-/*`styling for paragraph element*/
-
-p{
-    font-size: 20px;
-    color: whitesmoke;
-}
-/*h1 element styling*/
-h1{
-    margin-left: 10%;
-    padding-top: 10px;
-    margin-bottom: 15%;
-}
-/* tags style name styling*/
-.tags{
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-/*all buttons styling */
-button{
-    padding: 10px;
-    margin-left: 20px;
-}
-/*styling for all input elements*/
-input{
-    height: 2em;
-    margin-left: 20px;
-    border: none;
-    border-radius: 5px;
-    padding:0 5px;
-    
-}
-/*h2 temp styling */
-h2#temp{
- color: rgb(240, 243, 231);
- font-size: 40px;
- margin-top: 6%;
- 
-}
-/*span styling for weatherapp heading*/
-span{
-    color:whitesmoke;
-}
-/*recomendation button styling*/
-label#recomm{
     text-align: center;
-}
-/*button recomendation styling*/
-button#recommend-btn{
-    margin-top: 20px;
-    background-color: rgb(46, 232, 229);
-    font-size: 20px;
-    border-radius: 5px;
-    border: 2px solid black;
-}
-/*login text styling */
-.login-text{
-  text-align: center; 
-  margin-bottom: 15%; 
-  color: black;
-  font-size:32px ;
-  font-weight: bolder;
-}
-/*div card styling*/
-div#weather-html{
-background: #00050e;
-margin-left: 20%;
-margin-right: 20%;
-border-radius: 5px;
-}
-input#search{
-    margin-top:15px;
-    height: 3em;
-}
-#weather-html {
-
-    display: none;
-    
-}
-.signup{
-    border-radius: 20px;
-    border: none;
-    font-size: 20px;
-    margin-top:15%;
-
-}
-
-#main-div.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 450px;
     margin: auto;
-    text-align: center;
+    margin-top:10%;
 }
 
+
+/*Styling our main page*/
+#weather-html {
+    display: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*Adding style to our recommendation text*/
 .recommendation-details {
     text-align: center;
 }
 
+/*Styling the like button*/
 button.like {
     background: #fff;
     border: unset;
@@ -167,9 +109,12 @@ button.like {
     padding: 5px 10px;
 }
   
+/*Colour change when like button is pressed*/
 button.liked {
     color: #0571ed;
 }
+
+/*Styling the icon in the like button*/
 button.liked i{
     animation: anim 0.5s ease-in-out;
     -webkit-animation: anim 0.5s ease-in-out;
@@ -187,16 +132,91 @@ button.liked i{
     }
 }
 
+/*Styling the About page*/
 #Aboutinfo {
     display: none;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px 40px 40px
 }
 
+/*Hiding our feedback page till when the feedback link is pressed*/
 #Feedbackinfo {
     display: none;
 }
-#location-form, h2#temp, h2#wind, h3#description, div#recommend, p#recomm, label#recomm{
+
+/*Styling our card located in the main page*/
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    opacity: 0.9;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+    padding: 3em;
+    border-radius: 30px;
+    width: 100%;
+    color: white;
+    margin-top: 10%;
+    background: rgba(105, 105, 105, 0.823);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+
+
+}
+
+/*Default style to all our buttons*/
+button {
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/*Adding style to our recommendation text*/
+#recomm {
+    color: rgb(38, 0, 255);
+    font-size: 30px;
+}
+
+/*hiding our alert till the feedback submission button is clicked*/
+#alert {
+    display: none;
+}
+
+/*Styling the comment section in our feedback page*/
+#feedback-review {
+    font-size: 12px;
+}
+
+/*Styling the heart icon*/
+.material-icons {
+    font-size: 2px;
+}
+
+/*Styling the text of our fetched output*/
+#weather-container {
+    text-align: left;
+}
+
+/*Adding the degree symbol to the temperature output of our fetched data*/
+#temp {
+    content: \00B0;
+}
+
+/*Styling the weather icons*/
+img {
+    margin: 0;
+    padding: 0;
+    float: top-right;
+    height: 80px;
+    width: 80px;
+    float: top;
     text-align: center;
 }
-#location-input{
-    margin-top: 20%;
+
+/*Styling the reset location button*/
+#resetbtn {
+    text-align: center;
 }

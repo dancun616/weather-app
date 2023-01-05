@@ -1,7 +1,7 @@
 {
   "name": "weather-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "WeatherApp project is an app that allows users to get current data of the weather based on location search.The App also recommends what to wear based on current weather condition.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/dancun616/weather-app.git"
   },
-  "author": "Dancun odhia[mbo",
+  "author": "Dancun Odhiambo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dancun616/weather-app/issues"

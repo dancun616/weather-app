@@ -3,67 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherApp</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <!--css style for google icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body style="background-image: url('pexels-isaac-quesada-4381454.jpg'); height:100vh;">
-                <!--login details form-->
+<!--Body with a background image-->
+<body style="background-image: url('pexels-isaac-quesada-4381454.jpg');">
 
-    <div id="login-details" class="center">
-        <h1>Weather<span>App</span></h1>
+    <div id="login-details">
+            <!--app title-->
+            <h1>Weather<span>App</span></h1>
+            <!--login page-->
+            <div id="logtitle">
+                <p class="login">Login</p>
+            </div>
+        <!--login form-->
         <form id="login-form">
-            <p class="login-text">Login</p>
-            <p class="tags">Username or email</p>
-            <label class="tags" for="fUsername">Username:</label><br>
-            <input class="tags" type="text" id="login-name" placeholder="Input your username" required><br>
-            <label class="tags" for="password">Password:</label><br>
-            <input class="tags" id="login-password" placeholder="password" required><br>
-            <input type="submit">
+            <label for="fUsername">Username:</label><br>
+            <input type="text" id="login-name" placeholder=" username" required><br>
+            <label for="password">Password:</label><br>
+            <input id="login-password" placeholder=" password" required><br>
+            <input id="logformsubmit"type="submit" value="log in">
         </form>
         <div id="btn-signup">
+            <!--sign up button-->
             <div id="btn-sign-up">
-               
-                <button id="sign-up btn" class="signup">Sign up</button>
+                <p id="signdtls">create account</p>
+                <button id="sign-up btn">Sign up</button>
             </div>
         </div>
     </div>
-                <!--Sign-up details form-->
 
-    <div id="sign-up-details" class="center">
+    <!--sign-up page-->
+    <div id="sign-up-details">
+        <p>sign up.</p>
+        <!--sign-up form-->
         <form id="sign-up form">
-            <h1>Signup</h1>
-            <label for="f2name" class="tags">Name:</label><br>
-            <input type="Name" placeholder="Input your name" class="tags"><br>
-            <label for="f2Username" class="tags">Username:</label><br>
-            <input type="username" placeholder="Please create your username" class="tags"><br>
-            <label for="f2signup-password"class="tags" >Password:</label><br>
-            <input type="newPassword" placeholder="Please create your custom password"class="tags"><br>
-            <input type="submit" >
+            <label for="f2name">username:</label><br>
+            <input type="Name" placeholder="Please input your name"><br>
+            <label for="f2signup-password">Password:</label><br>
+            <input type="newPassword" placeholder="Create a password"><br>
+            <input type="submit" value="Sign up" >
         </form>
     </div>
-                    <!--Weather card form-->
-
-    <div id="weather-html">
+    <!--container for our weather app-->
+    <div id="weather-html" class="card">
         <div id="location-input">
+            <!--our form for inputting location-->
             <form id="location-form">
-                <input id="search" type="text" name="search" placeholder="Input location">
-                <input type="Submit" name="submit">
+                <input id="search" type="text" name="search" placeholder="Please input your location">
+                <input type="Submit" value="Search">
             </form>
         </div>
         <div id="main-div">
-            <div id="weather-container" class="card">
+            <!--contains our fetched results-->
+            <div id="weather-container">
                 <!--contains our fetched weather data-->
-                <h2 id="temp">Temperature: </h2>
+                <h2 id="inputname"></h2>
+                <h3 id="temp">Temperature: </h3>
+                
+                <h3 id="wind">Wind: </h3>
+                <h3 id="description">Weather Description: </h3>
+            </div>
+            <div id="resetbtn">
             </div>
             <div id="recommend">
+                <!--button for recommendations on what to wear based on the weather-->
                 <button id="recommend-btn">Recommendation</button>
             </div id="text recommendation">
-                <label id="recomm" for="recommendtext">Your Recommendation:</label>
-                <p id="recomm">Recommendation: </p>
+            <!--outputs our recommendation text-->
+                <p id="recomm"></p>
             </div>
         </div>
     </div>
+
+    <!--link to javascript-->
     <script src="JS/index.js"></script>
 </body>
 </html>
+
