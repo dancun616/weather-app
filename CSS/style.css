@@ -177,7 +177,7 @@ button {
 /*Adding style to our recommendation text*/
 #recomm {
     color: rgb(100, 186, 171);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /*hiding our alert till the feedback submission button is clicked*/
