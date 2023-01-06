@@ -109,7 +109,7 @@ locationForm.addEventListener("submit", function onsubmit(event) {
             return textrecomm.textContent=`Wear heavy clothing remember to carry an umbrella`
         } 
         else if (descr === "Partly cloudy") {
-            return textrecomm.textContent=`Carry a jacket and umbrella for just in case`
+            return textrecomm.textContent=`Carry a jacket and umbrella just in case`
         }
         else if (descr === "Sunny" || descr === "Clear") {
             return textrecomm.textContent=`Wear light clothing and hydrate regularly.`
